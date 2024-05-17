@@ -32,16 +32,16 @@
         }
 
         .staff-list {
-            margin-top: 10px;
-            flex-wrap: wrap;
+            margin-top: 50px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
         }
 
         .staff-member {
-            width: calc(25% - 10px);
-            margin: 5px;
-            padding: 50px;
+            width: calc(33.33% - 10px);
+            margin-bottom: 20px;
+            padding: 25px;
             background-color: #999;
             border: 3px solid #888;
             border-radius: 25px;
@@ -61,7 +61,7 @@
         }
 
         .staff-member p {
-            margin-bottom: 0px;
+            margin-bottom: 5px;
         }
 
         /* Different colors for different roles */
@@ -70,7 +70,6 @@
         .retiredowner { color: aqua; } /* Red */
         .builders { color: yellow; } /* Red */
         .reporter { color: green; } /* Green */
-        .helper { color: red; } /* Red */
         .op { color: aqua; } /* Blue */
         .buildhelp { color: yellow; } /* Yellow */
         .misc { color: yellow; } /* Yellow */
