@@ -6,6 +6,7 @@ body {
     font-weight: bold;
     padding: 0;
     width: 100%;
+    overflow: hidden;
     height: 100%;
 }
 .header {
@@ -71,6 +72,7 @@ nav {
 .staff-member p {
     margin-bottom: 0px;
 }
+
 
 .staff-member img {
     width: 40%;
