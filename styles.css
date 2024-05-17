@@ -16,17 +16,16 @@ body {
 }
 
 .header h1 {
-    margin: 25;
 }
 
 nav {
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .header-link {
     color: #fff;
     text-decoration: none;
-    margin-right: 25px;
+    margin: 100px;
 }
 
 .header-link:hover {
@@ -36,7 +35,7 @@ nav {
 .container {
     max-width: 800px;
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 5px;
 }
 h1, h2 {
     color: FFC94A;

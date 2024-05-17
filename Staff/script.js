@@ -6,15 +6,18 @@ const staffMembers = [
     { name: "DevTomi", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"9c746457-9e0e-4926-a394-260eb14a8762", weight: 60 },
     { name: "Toniid", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"11f21694-da0b-4b6d-ba37-0da178d66b73", weight: 60 },
     { name: "xSqueakPearl", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"f7a34611-fed0-49f9-af37-17f93c782b17", weight: 60 },
-    { name: "Dezova", role: "uhhh", pronouns: "", displayrole: "Idfk they're in staff chat for some reason", mcuuid:"339c99b8-f68e-4b46-b86f-4b66756348c8", weight: 60 },
+    { name: "Dezova", role: "misc", pronouns: "", displayrole: "Misc", mcuuid:"339c99b8-f68e-4b46-b86f-4b66756348c8", weight: 60 },
     { name: "ClownCaked", role: "reporter", pronouns: "he/him", displayrole: "Reporter", mcuuid:"2949ea5b-0e99-4a5b-90bf-4c389e09950d", weight: 60 },
     { name: "I_S_H", role: "reporter", pronouns: "Fuck you ish /pos", displayrole: "Reporter", mcuuid:"2dddbad0-818a-48c8-b8eb-ff21afeb2440", weight: 60 },
     { name: "SavageCreature", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"1630333d-f6e3-4d47-8161-b2a88928ee23", weight: 60 },
     //{ name: "Kingdarksword", role: "buildhelp", displayrole: "Build Help", weight: 50 },
     { name: "agmas", role: "retiredowner", pronouns: "she/her", displayrole: "Retired", mcuuid:"a36800f5-62b5-49a8-b669-b7c061ea594e",weight: 50 },
+    { name: "FrikkyLight", role: "helper", displayrole: "Helpers", weight: 50 },
+    { name: "Hackmeme", role: "reporter", displayrole: "Reporter", weight: 60 },
 
     // the pronouns are just set by whatever they have on discord! if they don't have anything clearly set, i just used nothing; to not be disrespectful. please change before release as it looks off with someone people not having them
 ];
+
 
 // Sort staff members based on role and weight
 staffMembers.sort((a, b) => {
