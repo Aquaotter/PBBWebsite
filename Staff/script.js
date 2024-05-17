@@ -1,50 +1,22 @@
 const staffMembers = [
-    { name: "4950", role: "owners", displayrole: "Owner", weight: 100 },
-    { name: "_Aquaotter_", role: "dev", displayrole: "Dev", weight: 90 },
-    { name: "UntitledGoose", role: "dev", displayrole: "Dev", weight: 90 },
-    { name: "Agmass", role: "dev", displayrole: "Dev", weight: 90 },
-    { name: "ClownCaked", role: "builders", displayrole: "Builders", weight: 70 },
-    { name: "Sanan1010", role: "builders", displayrole: "Builders", weight: 70 },
-    { name: "4950", role: "builders", displayrole: "Builders", weight: 70 },
-    { name: "SavageCreature", role: "reporter", displayrole: "Reporter", weight: 60 },
-    { name: "Hackmeme", role: "reporter", displayrole: "Reporter", weight: 60 },
-    { name: "xSqueakpearl", role: "reporter", displayrole: "Reporter", weight: 60 },
-    { name: "Toniid", role: "reporter", displayrole: "Reporter", weight: 60 },
-    { name: "DevTomi", role: "reporter", displayrole: "Reporter", weight: 60 },
-    { name: "I_S_H", role: "reporter", displayrole: "Reporter", weight: 60 },
-    { name: "FrikkyLight", role: "helper", displayrole: "Helpers", weight: 50 },
-    { name: "Dezova", role: "misc", displayrole: "Misc", weight: 10 },
-];/*
-            .owners { color: red; }
-            .dev { color: gold; }
-            .retiredowner { color: aqua; }
-            .builders { color: yellow; }
-            .reporter { color: green; }
-            .op { color: aqua; }
-            .buildhelp { color: yellow; }
-            .misc { color: yellow; }
-*/
-/*Owner:
+    { name: "4950", role: "owners", pronouns: "", displayrole: "Owner", mcuuid:"98d7aec4-341a-44cc-9652-4ffa3b75be46", weight: 100 },
+    { name: "_Aquaotter_", role: "dev", pronouns: "he/him", displayrole: "Dev", mcuuid:"70b05929-c09f-4c6e-8d68-e8b1a8c02cbc", weight: 90 },
+    { name: "UntitledGoose", role: "op", pronouns: "she/her", displayrole: "OP", mcuuid:"ac94d512-c072-41db-984f-e1203783d362", weight: 80 },
+    { name: "Sanan1010", role: "builders", pronouns: "", displayrole: "Builder", mcuuid:"5ee7b861-1b72-46eb-b512-4a9c61b5a5e3", weight: 70 },
+    { name: "DevTomi", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"9c746457-9e0e-4926-a394-260eb14a8762", weight: 60 },
+    { name: "Toniid", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"11f21694-da0b-4b6d-ba37-0da178d66b73", weight: 60 },
+    { name: "xSqueakPearl", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"f7a34611-fed0-49f9-af37-17f93c782b17", weight: 60 },
+    { name: "Dezova", role: "misc", pronouns: "", displayrole: "Misc", mcuuid:"339c99b8-f68e-4b46-b86f-4b66756348c8", weight: 60 },
+    { name: "ClownCaked", role: "reporter", pronouns: "he/him", displayrole: "Reporter", mcuuid:"2949ea5b-0e99-4a5b-90bf-4c389e09950d", weight: 60 },
+    { name: "I_S_H", role: "reporter", pronouns: "Fuck you ish /pos", displayrole: "Reporter", mcuuid:"2dddbad0-818a-48c8-b8eb-ff21afeb2440", weight: 60 },
+    { name: "SavageCreature", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"1630333d-f6e3-4d47-8161-b2a88928ee23", weight: 60 },
+    { name: "agmas", role: "retiredowner", pronouns: "she/her", displayrole: "Retired", mcuuid:"a36800f5-62b5-49a8-b669-b7c061ea594e",weight: 50 },
+    { name: "FrikkyLight", role: "helper", pronouns: "idk", displayrole: "Helper", mcuuid:"c054a35a-df37-4ca9-8f35-a07ca2b914a7",weight: 40 },
+    { name: "Hackmeme", role: "reporter", pronouns: "he/him", displayrole: "Reporter", mcuuid:"e45a9ad1-4f5c-449f-8203-730a918d4c3f",weight: 60 },
 
-  4950
+    // the pronouns are just set by whatever they have on discord! if they don't have anything clearly set, i just used nothing; to not be disrespectful. please change before release as it looks off with someone people not having them
+];
 
-  Developers
-   (Aquaotter, Goose, Agmas)
-
-  Operator
-  (NONE, KEEP BLANK TILL WE FIND)
-
-  Builders
-  (Clowncaked, Sanan1010, 4950)
-
-  Reporters
-  (SavageCreature, Hackmeme, xSqueakpearl, Toniid, DevTomi, I_S_H)
-
-  Helpers
-  (FrikkyLight)
-
-  Misc
-  (Dezova)*/
 
 // Sort staff members based on role and weight
 staffMembers.sort((a, b) => {
@@ -56,21 +28,35 @@ staffMembers.sort((a, b) => {
 });
 
 const staffList = document.getElementById("staffList");
+let lastMemberRole = "";
 
 // Add staff members to the DOM
 staffMembers.forEach(member => {
+
     const div = document.createElement("div");
+    
     div.classList.add("staff-member");
     div.classList.add(member.role);
     const img = document.createElement("img");
-    img.src = "../Images/MinecraftFaces/"+member.name+".png";
+    img.src = "https://crafatar.com/renders/head/" + member.mcuuid;
     const nameHeading = document.createElement("h4");
     nameHeading.textContent = member.name;
     const roleParagraph = document.createElement("p");
     roleParagraph.textContent = member.displayrole;
+    const pronounParagraph = document.createElement("p");
+    pronounParagraph.textContent = member.pronouns;
+    pronounParagraph.style.fontSize = "12px";
+
+    pronounParagraph.style.margin = "0px";
+    roleParagraph.style.margin = "3px";
+    roleParagraph.style.fontSize = "15px";
+    nameHeading.style.fontSize = "20px";
+    
     div.appendChild(img);
     div.appendChild(nameHeading);
+    div.appendChild(pronounParagraph);
     div.appendChild(roleParagraph);
-    staffList.appendChild(div);
+    staffList   .appendChild(div);
+    lastMemberRole = member.role;
 });
 
