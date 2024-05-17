@@ -9,10 +9,11 @@ const staffMembers = [
     { name: "Dezova", role: "misc", pronouns: "", displayrole: "Misc", mcuuid:"339c99b8-f68e-4b46-b86f-4b66756348c8", weight: 60 },
     { name: "ClownCaked", role: "reporter", pronouns: "he/him", displayrole: "Reporter", mcuuid:"2949ea5b-0e99-4a5b-90bf-4c389e09950d", weight: 60 },
     { name: "I_S_H", role: "reporter", pronouns: "Fuck you ish /pos", displayrole: "Reporter", mcuuid:"2dddbad0-818a-48c8-b8eb-ff21afeb2440", weight: 60 },
+    { name: "Hackmeme", role: "reporter", displayrole: "Reporter", pronouns: "", mcuuid: "e45a9ad1-4f5c-449f-8203-730a918d4c3f", weight: 60 },
     { name: "SavageCreature", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"1630333d-f6e3-4d47-8161-b2a88928ee23", weight: 60 },
-    { name: "agmas", role: "retiredowner", pronouns: "she/her", displayrole: "Retired", mcuuid:"a36800f5-62b5-49a8-b669-b7c061ea594e",weight: 50 },
-    { name: "FrikkyLight", role: "helper", pronouns: "idk", displayrole: "Helper", mcuuid:"c054a35a-df37-4ca9-8f35-a07ca2b914a7",weight: 40 },
-    { name: "Hackmeme", role: "reporter", pronouns: "he/him", displayrole: "Reporter", mcuuid:"e45a9ad1-4f5c-449f-8203-730a918d4c3f",weight: 60 },
+    //{ name: "Kingdarksword", role: "buildhelp", displayrole: "Build Help", weight: 50 },
+    { name: "FrikkyLight", pronouns: "", mcuuid: "", role: "helper", displayrole: "Helpers", weight: 50 },
+    { name: "agmas", role: "retiredowner", pronouns: "she/her", displayrole: "Retired", mcuuid:"a36800f5-62b5-49a8-b669-b7c061ea594e",weight: 50 }
 
     // the pronouns are just set by whatever they have on discord! if they don't have anything clearly set, i just used nothing; to not be disrespectful. please change before release as it looks off with someone people not having them
 ];

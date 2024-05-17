@@ -5,6 +5,8 @@ body {
     color: #FFC94A;
     font-weight: bold;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 .header {
     background-color: #C08B5C;
@@ -15,18 +17,78 @@ body {
                     box-sizing: border-box; /* Ensure padding is included in width */
 }
 
-.header h1 {
-}
 
 nav {
     margin: 20px;
 }
 
+/* Reset default browser styles */
+
 .header-link {
     color: #fff;
     text-decoration: none;
-    margin: 100px;
+    margin: 3%;
 }
+
+.header-link:hover {
+    text-decoration: bold;
+    color: #1ff;
+}
+
+.staff-list {
+
+    max-width: 90%;
+    margin-top: 50px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.staff-member {
+    width: 2%;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #C08B5C;
+    border: 3px solid #976d48;
+    border-radius: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 200px;   
+}
+
+
+.staff-member h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.staff-member p {
+    margin-bottom: 0px;
+}
+
+.staff-member img {
+    width: 40%;
+    min-width: 40px;   
+}
+
+/* Different colors for different roles */
+.owners { color: rgb(179, 0, 0); } /* Red */
+.dev { color: gold; } /* Red */
+.retiredowner { color: rgb(0, 99, 192); } /* Red */
+.builders { color: yellow; } /* Red */
+.reporter {  color: rgb(0, 255, 0); } /* Green */
+.op { color: rgb(59, 216, 255); } /* Blue */
+.helper { color: red; } /* Red */
+.buildhelp { color: yellow; } /* Yellow */
+.misc { color: yellow; } /* Yellow */
+
+
 
 .header-link:hover {
     text-decoration: bold;
