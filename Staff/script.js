@@ -13,7 +13,7 @@ const staffMembers = [
     { name: "SavageCreature", role: "reporter", pronouns: "", displayrole: "Reporter", mcuuid:"1630333d-f6e3-4d47-8161-b2a88928ee23", weight: 60 },
     //{ name: "Kingdarksword", role: "buildhelp", displayrole: "Build Help", weight: 50 },
     { name: "FrikkyLight", pronouns: "", mcuuid: "", role: "helper", displayrole: "Helpers", weight: 50 },
-    { name: "agmas", role: "retiredowner", pronouns: "she/her", displayrole: "Retired", mcuuid:"a36800f5-62b5-49a8-b669-b7c061ea594e",weight: 50 },
+    { name: "agmas", role: "retiredowner", pronouns: "she/her", displayrole: "Retired", mcuuid:"a36800f5-62b5-49a8-b669-b7c061ea594e",weight: 50 }
 
     // the pronouns are just set by whatever they have on discord! if they don't have anything clearly set, i just used nothing; to not be disrespectful. please change before release as it looks off with someone people not having them
 ];
